@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국원자력환경공단</title>
     <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
     <link rel="stylesheet" href="css/test1.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
 
     <main id="container">
         <!-- 메인비주얼 슬라이드 -->
-        <div class="swiper-container main_visual_swiper">
+        <div class="main_visual_swiper swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide1"><span class="blind">Slide 1</span></div>
                 <div class="swiper-slide slide2"><span class="blind">Slide 2</span></div>
@@ -56,10 +56,10 @@
         <!-- //메인비주얼 슬라이드 -->
 
         <!--검색창-->
-        <article class="search">
-            <strong class="search_main_txt">국민이 신뢰하는 <br>방폐물 관리 선도기관</strong>
-            <form class="search_form">
-                <select class="search_select">
+        <article class="main_search">
+            <strong class="main_search_txt">국민이 신뢰하는 <br>방폐물 관리 선도기관</strong>
+            <form class="main_search_form">
+                <select class="main_search_select">
                     <option value="1">통합검색</option>
                     <option value="2">통합검색2</option>
                     <option value="3">통합검색3</option>
@@ -67,16 +67,16 @@
                 <input type="text" value=" ">
                 <button type="submit"><img src="img/search_button_w.png" alt="검색버튼"></button>
             </form>
-            <div class="search_menu">
-                <em class="search_menu_txt">즐겨찾는 메뉴</em>
+            <div class="main_search_menu">
+                <em class="main_search_menu_txt">즐겨찾는 메뉴</em>
                 <ul>
                     <li><a href="#">채용게시판</a></li>
-                    <li class="search_menu_bar">|</li>
+                    <li class="main_search_menu_bar">|</li>
                     <li><a href="#">통합검색</a></li>
-                    <li class="search_menu_bar">|</li>
+                    <li class="main_search_menu_bar">|</li>
                     <li><a href="#">공지사항</a></li>
-                    <li class="search_menu_bar search_menu_hidden">|</li>
-                    <li class="search_menu_hidden"><a href="#">정보목록</a></li>
+                    <li class="main_search_menu_bar search_menu_hidden">|</li>
+                    <li class="main_search_menu_hidden"><a href="#">정보목록</a></li>
                 </ul>
             </div>
         </article>
@@ -204,10 +204,10 @@
             <h2 class="mainBusiness_title">주요사업 및 ESG경영</h2>
             <div class="mainBusiness_group">
                 <a href="#" class="mainBusiness_box_1">
-                    중저준위<br>방패물 관리사업
+                    중저준위 <br>방패물 관리사업
                 </a>
                 <a href="#" class="mainBusiness_box_2">
-                    고준위<br>방패물 관리사업
+                    고준위 <br>방패물 관리사업
                 </a>
                 <a href="#" class="mainBusiness_box_3">
                     ESG경영
@@ -278,12 +278,16 @@
                 <div class="swiper-container footer_banner_swiper">
                     <h2 class="footer_title">협력기관배너</h2>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide footer_bannerImg1"><span class="blind">Slide 1</span></div>
-                        <div class="swiper-slide footer_bannerImg2"><span class="blind">Slide 2</span></div>
+                        <div class="swiper-slide footer_bannerImg1">
+                            <span class="blind">Slide 1</span>
+                        </div>
+                        <div class="swiper-slide footer_bannerImg2">
+                            <span class="blind">Slide 2</span>
+                        </div>
                     </div>
                     <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
 
@@ -291,12 +295,16 @@
                 <div class="swiper-container footer_banner_swiper">
                     <h2 class="footer_title">팝업존</h2>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide footer_bannerImg2"><span class="blind">Slide 1</span></div>
-                        <div class="swiper-slide footer_bannerImg1"><span class="blind">Slide 2</span></div>
+                        <div class="swiper-slide footer_bannerImg2">
+                            <span class="blind">Slide 1</span>
+                        </div>
+                        <div class="swiper-slide footer_bannerImg1">
+                            <span class="blind">Slide 2</span>
+                        </div>
                     </div>
                     <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
             <!-- 푸터배너 슬라이드 -->

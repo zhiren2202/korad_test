@@ -154,13 +154,13 @@ section {
     background-position: center;
 }
 .main_visual_swiper .swiper-wrapper .slide1 {
-    background-image: url(img/main_visual_1.jpg);
+    background-image: url(../img/main_visual_1.jpg);
 }
 .main_visual_swiper .swiper-wrapper .slide2 {
-    background-image: url(img/main_visual_2.jpg);
+    background-image: url(../img/main_visual_2.jpg);
 }
 .main_visual_swiper .swiper-wrapper .slide3 {
-    background-image: url(img/main_visual_3.jpg);
+    background-image: url(../img/main_visual_3.jpg);
 }
 
 .main_visual_swiper .swiper-pagination-bullet {
@@ -259,7 +259,7 @@ section {
     -webkit-appearance:none; /* for chrome */
     -moz-appearance:none; /*for firefox*/
     appearance:none;
-    background-image: url(/img/select_arrow.png);
+    background-image: url(..//img/select_arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
 
@@ -496,15 +496,15 @@ section {
     margin-left: 0;
 }
 .mainBusiness_group .mainBusiness_box_1::before {
-    background-image: url(img/bgimg1.jpg);
+    background-image: url(../img/bgimg1.jpg);
     background-position: left -24px;
 }
 .mainBusiness_group .mainBusiness_box_2::before {
-    background-image: url(img/bgimg2.jpg);
+    background-image: url(../img/bgimg2.jpg);
     background-position: -286px -168px;
 }
 .mainBusiness_group .mainBusiness_box_3::before {
-    background-image: url(img/bgimg3.jpg);
+    background-image: url(../img/bgimg3.jpg);
     background-position: center;
 }
 
@@ -586,19 +586,19 @@ section {
 }
 
 .youtube {
-    background-image: url(img/sns_icon_y.png);
+    background-image: url(../img/sns_icon_y.png);
 }
 
 .instagram {
-    background-image: url(img/sns_icon_i.png);
+    background-image: url(../img/sns_icon_i.png);
 }
 
 .naver {
-    background-image: url(img/sns_icon_n.png);
+    background-image: url(../img/sns_icon_n.png);
 }
 
 .facebook {
-    background-image: url(img/sns_icon_f.png);
+    background-image: url(../img/sns_icon_f.png);
 }
 
 /*** footer ***/
@@ -692,11 +692,11 @@ section {
 }
 
 .footer_bannerImg1 {
-    background-image: url(img/f_banner1.jpg);
+    background-image: url(../img/f_banner1.jpg);
 }
 
 .footer_bannerImg2 {
-    background-image: url(img/f_banner2.jpg);
+    background-image: url(../img/f_banner2.jpg);
 }
 
 .footer_banner_swiper [class*='swiper-button-']{
@@ -710,12 +710,12 @@ section {
 }
 
 .footer_banner_swiper .swiper-button-next {
-    background-image: url(img/next_btn.jpg);
+    background-image: url(../img/next_btn.jpg);
     right: 0;
 }
 
 .footer_banner_swiper .swiper-button-prev {
-    background-image: url(img/prev_btn.jpg);
+    background-image: url(../img/prev_btn.jpg);
     left: 180px;
 }
 

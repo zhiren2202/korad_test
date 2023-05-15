@@ -1,0 +1,22 @@
+[Git Bash 환경설정]
+1. 유저 이름 설정
+git config --global user.name "your_name"
+2. 유저 이메일 설정
+git config --global user.email "your_email"
+3. 정보 확인
+git config --list
+
+[Github에 처음 코드 업로드]
+1. 초기화
+git init
+2. git add .
+3. (선택) git status
+4. git commit -m "first commit"
+5. (복사) git remote add origin https://github.com/bitnaGithub/firstproject.git
+6. (선택) git remote -v
+7. git push origin master
+
+[Github에 계속 업데이트]
+1. git add .
+2. git commit -m "first commit"
+3. git push origin master

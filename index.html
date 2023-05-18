@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국원자력환경공단</title>
-    <link rel="stylesheet" href="css/swiper.css">
-    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
     <link rel="stylesheet" href="css/test1.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
     <header id="header">
@@ -50,8 +49,12 @@
                 <div class="swiper-slide slide3"><span class="blind">Slide 3</span></div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- //Add Pagination -->
+            
+            <div class="wrap-autoplay-control">
+                <button aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+            </div>
         </div>
         <!-- //메인비주얼 슬라이드 -->
 
@@ -83,52 +86,57 @@
         <!--//검색창-->
         
         <!-- 메인비주얼 메뉴아이콘 슬라이드 -->
-        <section class="main_visual_menuBox swiper-container">
-            <div class="swiper-wrapper">
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu1.png" alt="">
-                    방폐물<br>인수처분량
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu2.png" alt="">
-                    방사선<br>측정서비스
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu3.png" alt="">
-                    RI 폐기물<br>인수의뢰
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu4.png" alt="">
-                    RI 불용선원<br>재활용 플랫폼
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu5.png" alt="">
-                    기술지원
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu6.png" alt="">
-                    기업성장<br>응답센터
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu7.png" alt="">
-                    방폐장<br>방문신청
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu8.png" alt="">
-                    방폐장 주변<br>방사선량
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu9.png" alt="">
-                    전국방사선량
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu10.png" alt="">
-                    전국지진정보
-                </a>
-                <a href="#" class="main_visual_menu swiper-slide">
-                    <img src="img/main_visual_menu11.png" alt="">
-                    홍보영상
-                </a>
+        <section class="main_visual_menuGroup">
+            <div class="main_visual_menuSlide swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu1.png" alt="">
+                        방폐물<br>인수처분량
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu2.png" alt="">
+                        방사선<br>측정서비스
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu3.png" alt="">
+                        RI 폐기물<br>인수의뢰
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu4.png" alt="">
+                        RI 불용선원<br>재활용 플랫폼
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu5.png" alt="">
+                        기술지원
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu6.png" alt="">
+                        기업성장<br>응답센터
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu7.png" alt="">
+                        방폐장<br>방문신청
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu8.png" alt="">
+                        방폐장 주변<br>방사선량
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu9.png" alt="">
+                        전국방사선량
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu10.png" alt="">
+                        전국지진정보
+                    </a>
+                    <a href="#" class="main_visual_menu swiper-slide">
+                        <img src="img/main_visual_menu11.png" alt="">
+                        홍보영상
+                    </a>
+                </div>
+                <!-- Add Arrows -->
+                <div class="slide_button_next swiper-button-next"></div>
+                <div class="slide_button_prev swiper-button-prev"></div>
             </div>
         </section>
         <!-- //메인비주얼 메뉴아이콘 슬라이드 -->
@@ -216,6 +224,35 @@
         </section>
         <!--//주요사업-->
 
+        <!-- Korad 소식 (모바일 슬라이드) -->
+        <section class="koradNews">
+            <h2 class="koradNews_title">KORAD 소식</h2>
+            <div class="koradNews_slide swiper-container">
+                <div class="koradNews_group swiper-wrapper">
+                    <a href="#" class="koradNews_box swiper-slide" title="M방폐장 바로가기">
+                        <img src="img/koradnews_1.jpg" alt="" class="koradNews_img">
+                        M 방폐장
+                    </a>
+                    <a href="#" class="koradNews_box swiper-slide" title="메타버스 방폐장 바로가기">
+                        <img src="img/koradnews_2.jpg" alt="" class="koradNews_img">
+                        베타버스 방폐장
+                    </a>
+                    <a href="#" class="koradNews_box swiper-slide" title="코라디움 VR 바로가기">
+                        <img src="img/koradnews_3.jpg" alt="" class="koradNews_img">
+                        코라디움 VR
+                    </a>
+                    <a href="#" class="koradNews_box swiper-slide" title="청정누리 웹진 바로가기">
+                        <img src="img/koradnews_4.jpg" alt="" class="koradNews_img">
+                        청정누리 웹진
+                    </a>
+                </div>
+                <!-- Add Arrows -->
+                <div class="slide_button_prev swiper-button-prev"></div>
+                <div class="slide_button_next swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- //Korad 소식 -->
+
         <!--SNS 배너-->
         <section class="sns_banner">
             <h2 class="sns_banner_txt">SNS 바로가기</h2>
@@ -275,7 +312,7 @@
 
             <!-- 푸터배너 슬라이드 -->
             <div class="footer_banner">
-                <div class="swiper-container footer_banner_swiper">
+                <div class="footer_banner_swiper swiper-container">
                     <h2 class="footer_title">협력기관배너</h2>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide footer_bannerImg1">
@@ -319,62 +356,7 @@
     </footer>
 </body>
 <script src="js/swiper.js"></script>
-<script src="js/swiper.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.main_visual_swiper', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    var swiper = new Swiper('.main_visual_menuBox', {
-        slidesPerView: 11,
-        spaceBetween: 0,
-        // init: false,
-        breakpoints: {
-            1250: {
-                slidesPerView: 8,
-                spaceBetween: 0,
-            },
-            1024: {
-                slidesPerView: 7,
-                spaceBetween: 0,
-            },
-            820: {
-                slidesPerView: 5,
-                spaceBetween: 0,
-            },
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 0,
-            },
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            }
-        }
-    });
-
-    var swiper = new Swiper('.footer_banner_swiper', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-</script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script src="js/index_slide.js"></script>
 
 </html>

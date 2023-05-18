@@ -1,44 +1,38 @@
-/* @font-face {
+@font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.woff') format(‘woff’);
     font-weight: 100;
-    src:url('font/noto_sans_kr/NotoSansKR-Thin.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Thin.woff') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.woff') format(‘woff’);
     font-weight: 300;
-    src:url('font/noto_sans_kr/NotoSansKR-Light.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Light.woff') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.woff') format(‘woff’);
     font-weight: 400;
-    src:url('font/noto_sans_kr/NotoSansKR-Regular.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Regular.woff') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.woff') format(‘woff’);
     font-weight: 500;
-    src:url('font/noto_sans_kr/NotoSansKR-Medium.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Medium.woff') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.woff') format(‘woff’);
     font-weight: 700;
-    src:url('font/noto_sans_kr/NotoSansKR-Bold.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Bold.woff') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.woff') format(‘woff’);
     font-weight: 900;
-    src:url('font/noto_sans_kr/NotoSansKR-Black.woff') format('woff'),
-        url('font/noto_sans_kr/NotoSansKR-Black.woff') format('woff2');
-} */
+}
 
 * {
     padding: 0;
@@ -50,6 +44,7 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #333333;
+    font-size: 16px;
 }
 
 li {
@@ -181,26 +176,44 @@ section {
     text-align: right;
 }
 
-/* 메인비주얼 메뉴아이콘 */
-.main_visual_menuBox {
+.main_visual_swiper .wrap-autoplay-control {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #38a200;
+    z-index: 10;
+}
+
+/* 메인비주얼 메뉴아이콘 슬라이드 */
+.main_visual_menuGroup {
     font-size: 1.1em;
     color: #555555;
     overflow: hidden;
-    border: 1px solid #e4e4e4;
     background-color: #fff;
     border-radius: 5px;
     width: 100%;
-    padding: 0 2em;
 }
-.main_visual_menuBox .swiper-wrapper {
+
+.main_visual_menuGroup [class*='slide_button_'] {
+    display: none;
+}
+
+.main_visual_menuSlide {
+    border: 1px solid #e4e4e4;
+}
+
+.main_visual_menuGroup .swiper-wrapper {
     padding: 2em 0;
+}
+.main_visual_menuGroup .swiper-wrapper .swiper-slide {
+    width: auto;
 }
 .main_visual_menu {
     overflow: hidden;
     background-color: #fff;
     display: inline-block;
-}
-.main_visual_menu {
     text-align: center;
     border-left: 1px solid #eceff2;
     padding: 0 0.8em;
@@ -211,6 +224,7 @@ section {
 }
 .main_visual_menu img {
     display: block;
+    margin: 0 auto;
 }
 
 /*** 검색창 ***/
@@ -539,6 +553,51 @@ section {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*** Korad 소식 (모바일 슬라이드) ***/
+.koradNews {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5em;
+}
+
+.koradNews [class*='slide_button_'] {
+    display: none;
+}
+
+.koradNews_title {
+    text-align: center;
+    margin: 0.6em 0;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.koradNews_group {
+    width: 100%;
+}
+
+.koradNews_group .koradNews_box {
+    display: block;
+    width: 24.25%;
+    overflow: hidden;
+    float: left;
+    margin-left: 1%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.koradNews_group .koradNews_box:first-child {
+    margin-left: 0;
+}
+
+.koradNews_group .koradNews_img {
+    width: 100%;
+    margin-bottom: 0.4em;
+    border: 1px solid #ebebeb;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+}
+
 /*** SNS 배너 ***/
 .sns_banner {
     /* height: 12em;*/
@@ -710,29 +769,31 @@ section {
 
 .footer_banner_swiper [class*='swiper-button-'] {
     position: absolute;
-    top: 30px;
-    width: 2em;
-    height: 2em;
+    top: 2px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border: 1px solid #e4e4e4;
     background-size: 50%;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer_banner_swiper [class*='swiper-button-'] {
+    margin-top: 0;
 }
 
 .footer_banner_swiper .swiper-button-prev {
     background-image: url(../img/prev_btn.jpg);
     /* left: 13.7em; */
-    right: 2em;
+    /* right: 2em; */
+    left: auto;
+    right: 29px;
 }
 
 .footer_banner_swiper .swiper-button-next {
     background-image: url(../img/next_btn.jpg);
     right: 0;
-}
-
-.swiper-button-next.swiper-button-disabled, 
-.swiper-button-prev.swiper-button-disabled {
-    opacity: 1;
 }
 
 .footer_company_info {
@@ -786,6 +847,26 @@ section {
 
 /* max-width : 1250px */
 @media screen and (max-width:1250px){
+    /* 메인비주얼 메뉴아이콘 슬라이드 */
+    .main_visual_menuGroup [class*='slide_button_'] {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #b8b8b8;
+        border-radius: 10em;
+        background-color: #fff;
+        background-size: auto;
+        z-index: 2;
+    }
+
+    .main_visual_menuGroup .slide_button_next {
+        background-image: url(../img/slide_btn_next.png);
+    }
+
+    .main_visual_menuGroup .slide_button_prev {
+        background-image: url(../img/slide_btn_prev.png);
+    }
+
     /* 주요사업 */
     .mainBusiness_group [class*='mainBusiness_box_'] {
         height: 36vh;
@@ -992,6 +1073,33 @@ section {
         background-position: center;
     }
 
+    /* Korad 소식 (모바일 슬라이드) */
+    .koradNews_group .koradNews_box {
+        width: 49%;
+        margin-left: 1%;
+    }
+
+    .koradNews [class*='slide_button_'] {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #b8b8b8;
+        border-radius: 10em;
+        background-color: #fff;
+        background-size: auto;
+        z-index: 2;
+        margin-top: -20px;
+        transform: translate(0,-50%);
+    }
+    
+    .koradNews .slide_button_next {
+        background-image: url(../img/slide_btn_next.png);
+    }
+    
+    .koradNews .slide_button_prev {
+        background-image: url(../img/slide_btn_prev.png);
+    }
+
     /* SNS 배너 */
     .sns_banner {
         background: none;
@@ -1008,10 +1116,10 @@ section {
         transform: translate(50%,-50%);
     }
 
-    .sns_banner .sns_icon {
+    /* .sns_banner .sns_icon {
         width: 4em;
         height: 4em;
-    }
+    } */
 }
 
 /* 모바일 (400px) */
@@ -1024,12 +1132,6 @@ section {
         width: 178px;
         margin: 0.1485px 0;
     }
-
-    /* 검색창 */
-    /* .main_search .main_search_form .main_search_select {
-        width: 80px;
-        height: 50px;
-    } */
 
     /* 바로가기 메뉴 */
     .iconMenuBox .iconMenu {

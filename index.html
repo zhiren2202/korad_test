@@ -13,6 +13,7 @@
         <h1 class="logo">
             <a href="#">
                 <img src="img/logo.jpg" alt="한국원자력환경공단 로고">
+                <span class="blind">한국원자력환경공단 메인페이지로 이동</span>
             </a>
         </h1>
         <nav class="top_navbar">
@@ -30,11 +31,13 @@
             <li class="nav_icon_items hidden">
                 <a href="#" title="검색 바로가기">
                     <img src="img/search_button_g.jpg" alt="검색">
+                    <span class="blind">돋보기 아이콘</span>
                 </a>
             </li>
             <li class="nav_icon_items">
                 <a href="#" title="사이트맵 바로가기">
                     <img src="img/menu.jpg" class="nav_icon_menu" alt="사이트맵 메뉴">
+                    <span class="blind">메뉴바 아이콘</span>
                 </a>
             </li>
         </ul>
@@ -42,18 +45,17 @@
 
     <main id="container">
         <!-- 메인비주얼 슬라이드 -->
-        <div class="main_visual_swiper swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"><span class="blind">Slide 1</span></div>
-                <div class="swiper-slide slide2"><span class="blind">Slide 2</span></div>
-                <div class="swiper-slide slide3"><span class="blind">Slide 3</span></div>
+        <div class="main_visualGroup swiper-container">
+            <div class="main_visualWrapper swiper-wrapper">
+                <div class="main_visual_1 swiper-slide"><span class="blind">Slide 1</span></div>
+                <div class="main_visual_2 swiper-slide"><span class="blind">Slide 2</span></div>
+                <div class="main_visual_3 swiper-slide"><span class="blind">Slide 3</span></div>
             </div>
             <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div>
             <!-- //Add Pagination -->
-            
             <div class="wrap-autoplay-control">
-                <button aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+                <button type="button" aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
             </div>
         </div>
         <!-- //메인비주얼 슬라이드 -->
@@ -87,8 +89,8 @@
         
         <!-- 메인비주얼 메뉴아이콘 슬라이드 -->
         <section class="main_visual_menuGroup">
-            <div class="main_visual_menuSlide swiper-container">
-                <div class="swiper-wrapper">
+            <div class="main_visual_menuContainer swiper-container">
+                <div class="main_visual_menuWrapper swiper-wrapper">
                     <a href="#" class="main_visual_menu swiper-slide">
                         <img src="img/main_visual_menu1.png" alt="">
                         방폐물<br>인수처분량
@@ -135,8 +137,8 @@
                     </a>
                 </div>
                 <!-- Add Arrows -->
-                <div class="slide_button_next swiper-button-next"></div>
-                <div class="slide_button_prev swiper-button-prev"></div>
+                <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
+                <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
             </div>
         </section>
         <!-- //메인비주얼 메뉴아이콘 슬라이드 -->
@@ -153,6 +155,7 @@
                 </ul>
                 <a href="#" class="board_more">
                     <img src="img/more.png" alt="게시글 더보기">
+                    <span class="blind">플러스 아이콘</span>
                 </a>
             </div>
             <div class="boardBox">
@@ -165,6 +168,7 @@
                 </ul>
                 <a href="#" class="board_more">
                     <img src="img/more.png" alt="게시글 더보기">
+                    <span class="blind">플러스 아이콘</span>
                 </a>
             </div>
             <div class="boardBox">
@@ -177,6 +181,7 @@
                 </ul>
                 <a href="#" class="board_more">
                     <img src="img/more.png" alt="게시글 더보기">
+                    <span class="blind">플러스 아이콘</span>
                 </a>
             </div>
         </section>
@@ -225,30 +230,30 @@
         <!--//주요사업-->
 
         <!-- Korad 소식 (모바일 슬라이드) -->
-        <section class="koradNews">
+        <section class="koradNewsGroup">
             <h2 class="koradNews_title">KORAD 소식</h2>
-            <div class="koradNews_slide swiper-container">
-                <div class="koradNews_group swiper-wrapper">
-                    <a href="#" class="koradNews_box swiper-slide" title="M방폐장 바로가기">
+            <div class="koradNewsContainer swiper-container">
+                <div class="koradNewsWrapper swiper-wrapper">
+                    <a href="#" class="koradNews swiper-slide" title="M방폐장 바로가기">
                         <img src="img/koradnews_1.jpg" alt="" class="koradNews_img">
                         M 방폐장
                     </a>
-                    <a href="#" class="koradNews_box swiper-slide" title="메타버스 방폐장 바로가기">
+                    <a href="#" class="koradNews swiper-slide" title="메타버스 방폐장 바로가기">
                         <img src="img/koradnews_2.jpg" alt="" class="koradNews_img">
                         베타버스 방폐장
                     </a>
-                    <a href="#" class="koradNews_box swiper-slide" title="코라디움 VR 바로가기">
+                    <a href="#" class="koradNews swiper-slide" title="코라디움 VR 바로가기">
                         <img src="img/koradnews_3.jpg" alt="" class="koradNews_img">
                         코라디움 VR
                     </a>
-                    <a href="#" class="koradNews_box swiper-slide" title="청정누리 웹진 바로가기">
+                    <a href="#" class="koradNews swiper-slide" title="청정누리 웹진 바로가기">
                         <img src="img/koradnews_4.jpg" alt="" class="koradNews_img">
                         청정누리 웹진
                     </a>
                 </div>
                 <!-- Add Arrows -->
-                <div class="slide_button_prev swiper-button-prev"></div>
-                <div class="slide_button_next swiper-button-next"></div>
+                <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
+                <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
             </div>
         </section>
         <!-- //Korad 소식 -->
@@ -311,31 +316,31 @@
             <!-- //이용안내 --> 
 
             <!-- 푸터배너 슬라이드 -->
-            <div class="footer_banner">
-                <div class="footer_banner_swiper swiper-container">
+            <div class="footer_bannerGroup">
+                <div class="footer_bannerContainer swiper-container">
                     <h2 class="footer_title">협력기관배너</h2>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide footer_bannerImg1">
+                    <div class="footer_bannerWrapper swiper-wrapper">
+                        <div class="footer_bannerSlide1 swiper-slide">
                             <span class="blind">Slide 1</span>
                         </div>
-                        <div class="swiper-slide footer_bannerImg2">
+                        <div class="footer_bannerSlide2 swiper-slide">
                             <span class="blind">Slide 2</span>
                         </div>
                     </div>
                     <!-- Add Arrows -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
+                    <div class="swiper-button-next"><span class="blind">다음 슬라이드</span></div>
                 </div>
             </div>
 
-            <div class="footer_banner">
-                <div class="swiper-container footer_banner_swiper">
+            <div class="footer_bannerGroup">
+                <div class="footer_bannerContainer swiper-container">
                     <h2 class="footer_title">팝업존</h2>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide footer_bannerImg2">
+                    <div class="footer_bannerWrapper swiper-wrapper">
+                        <div class="footer_bannerSlide2 swiper-slide">
                             <span class="blind">Slide 1</span>
                         </div>
-                        <div class="swiper-slide footer_bannerImg1">
+                        <div class="footer_bannerSlide1 swiper-slide">
                             <span class="blind">Slide 2</span>
                         </div>
                     </div>
@@ -356,7 +361,6 @@
     </footer>
 </body>
 <script src="js/swiper.js"></script>
-<!-- <script src="js/swiper.min.js"></script> -->
 <script src="js/index_slide.js"></script>
 
 </html>

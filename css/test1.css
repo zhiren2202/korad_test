@@ -73,11 +73,17 @@ a {
     margin-left: 1em;
 }
 
+#header .logo a {
+    overflow: hidden;
+    display: block;
+    height: 1.8em;
+    margin: 0.1em 0;
+}
+
 #header .logo a img {
     width: 240px;
     height: auto;
     overflow: hidden;
-    margin: 2px 0;
 }
 
 #header .top_navbar {
@@ -90,7 +96,7 @@ a {
 }
 
 #header .top_navbar .top_nav_menu {
-    padding: 1em 1.2em;
+    padding: 0 1.2em;
     font-size: 1.2em;
     color: #323232;
     font-weight: 500;
@@ -138,52 +144,82 @@ section {
 }
 
 /* 메인비주얼 슬라이드 */
-.main_visual_swiper {
+.main_visualGroup {
     width: 100%;
     height: 45em;
     position: relative;
 }
-.main_visual_swiper .swiper-wrapper .swiper-slide {
+.main_visualGroup .main_visualWrapper .swiper-slide {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.main_visual_swiper .swiper-wrapper .slide1 {
+.main_visualGroup .main_visualWrapper .main_visual_1 {
     background-image: url(../img/main_visual_1.jpg);
 }
-.main_visual_swiper .swiper-wrapper .slide2 {
+.main_visualGroup .main_visualWrapper .main_visual_2 {
     background-image: url(../img/main_visual_2.jpg);
 }
-.main_visual_swiper .swiper-wrapper .slide3 {
+.main_visualGroup .main_visualWrapper .main_visual_3 {
     background-image: url(../img/main_visual_3.jpg);
 }
 
-.main_visual_swiper .swiper-pagination-bullet {
+.main_visualGroup .swiper-pagination-bullet {
     background: none;
     opacity: 1;
     width: 1.5em;
     height: 1.5em;
     border: 2px solid #fff;
 }
-.main_visual_swiper .swiper-pagination-bullet-active {
+.main_visualGroup .swiper-pagination-bullet-active {
     background: #fff;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 100px;
-    padding-right: 30px;
+    padding-right: 66px;
 }
-.main_visual_swiper .swiper-pagination {
+.main_visualGroup .swiper-pagination {
     text-align: right;
 }
 
-.main_visual_swiper .wrap-autoplay-control {
+.wrap-autoplay-control {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: #38a200;
     z-index: 10;
+    bottom: 1em;
+    right: 30px;
+    transform: translateX(-50%);
+}
+.wrap-autoplay-control button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.wrap-autoplay-control button:before {
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+.wrap-autoplay-control button[aria-pressed="false"]:before {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    box-sizing: border-box;
+}
+
+.wrap-autoplay-control button[aria-pressed="true"]:before {
+    top: 2px;
+    left: 2px;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #fff;
+    border-bottom: 8px solid transparent;
 }
 
 /* 메인비주얼 메뉴아이콘 슬라이드 */
@@ -192,7 +228,6 @@ section {
     color: #555555;
     overflow: hidden;
     background-color: #fff;
-    border-radius: 5px;
     width: 100%;
 }
 
@@ -200,15 +235,17 @@ section {
     display: none;
 }
 
-.main_visual_menuSlide {
+.main_visual_menuContainer {
     border: 1px solid #e4e4e4;
+    border-radius: 5px;
 }
 
 .main_visual_menuGroup .swiper-wrapper {
-    padding: 2em 0;
+    padding: 2em 0.1em;
 }
 .main_visual_menuGroup .swiper-wrapper .swiper-slide {
     width: auto;
+    height: auto;
 }
 .main_visual_menu {
     overflow: hidden;
@@ -216,7 +253,8 @@ section {
     display: inline-block;
     text-align: center;
     border-left: 1px solid #eceff2;
-    padding: 0 0.8em;
+    /* padding: 0 0.8em; */
+    margin-right: 0.1em;
     /* background-color: antiquewhite; */
 }
 .main_visual_menu:first-child {
@@ -254,7 +292,7 @@ section {
     height: 60px;
     margin: 1em auto;
     margin-top: 2em;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.7);
     border: 2px solid #fff;
     border-radius: 1em;
     position: relative;
@@ -298,7 +336,9 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 5em 0 10em;
+    padding: 0 5em 0 8.5em;
+    color: #fff;
+    font-size: 1.2em;
 }
 
 .main_search_form button {
@@ -346,17 +386,16 @@ section {
 }
 
 .main_search_menu ul {
-    /* width: 22em; */
     height: auto;
     margin: 0 auto;
+    padding: 0.1em;
     overflow: hidden;
     /* background-color: beige; */
     text-align: center;
     float: right;
     position: absolute;
     top: 0;
-    /* right: 1em; */
-    left: 8em;
+    left: 7.5em;
 }
 
 .main_search_menu ul li {
@@ -378,7 +417,6 @@ section {
 
 .main_search_menu ul li:first-child a {
     border-left: 0;
-    padding-left: 0;
 }
 
 /*** 게시판 ***/
@@ -446,7 +484,7 @@ section {
     float: left;
     width: 19.52%;
     padding: 1.2em 3em 1.2em 1em;
-    margin-left: 0.6%;
+    margin: 0.2em 0 0.2em 0.6%;
     border: 1px solid #e4e4e4;
     border-radius: 5px;
     position: relative;
@@ -483,6 +521,7 @@ section {
 .mainBusiness_group {
     width: 100%;
     overflow: hidden;
+    padding: 0.1em;
 }
 
 .mainBusiness_group [class*='mainBusiness_box_'] {
@@ -493,8 +532,9 @@ section {
     height: 40vh;
     max-height: 24em;
     float: left;
-    margin-left: 1%;
-    border-radius: 0.3em;
+    /* margin-left: 1%; */
+    margin: 0.1em 0 0.1em 1%;
+    border-radius: 0.1em;
     text-align: center;
     position: relative;
     color: #fff;
@@ -513,6 +553,7 @@ section {
     left: 0;
     z-index: -2;
     background-repeat: no-repeat;
+    border-radius: 0.1em;
 }
 
 .mainBusiness_group .mainBusiness_box_1 {
@@ -554,16 +595,12 @@ section {
 }
 
 /*** Korad 소식 (모바일 슬라이드) ***/
-.koradNews {
+.koradNewsGroup {
     width: 100%;
     height: 100%;
     margin-bottom: 5em;
 }
-
-.koradNews [class*='slide_button_'] {
-    display: none;
-}
-
+    
 .koradNews_title {
     text-align: center;
     margin: 0.6em 0;
@@ -571,31 +608,32 @@ section {
     font-weight: 700;
 }
 
-.koradNews_group {
+.koradNewsWrapper {
     width: 100%;
+    padding: 0.5% 0;
+    /* background-color: #aeaeae; */
 }
 
-.koradNews_group .koradNews_box {
+.koradNewsWrapper .koradNews {
     display: block;
-    width: 24.25%;
     overflow: hidden;
     float: left;
-    margin-left: 1%;
     text-align: center;
     font-size: 1.6em;
     font-weight: 500;
+    border-radius: 0.2em;
 }
 
-.koradNews_group .koradNews_box:first-child {
-    margin-left: 0;
-}
-
-.koradNews_group .koradNews_img {
+.koradNewsWrapper .koradNews_img {
     width: 100%;
     margin-bottom: 0.4em;
     border: 1px solid #ebebeb;
     border-radius: 0.2em;
     box-sizing: border-box;
+}
+
+.koradNewsGroup [class*='slide_button_'] {
+    display: none;
 }
 
 /*** SNS 배너 ***/
@@ -738,17 +776,17 @@ section {
 }
 
 /* 푸터배너 슬라이드 */
-.footer_banner {
+.footer_bannerGroup {
     width: 24%;
     position: relative;
 }
 
-.footer_banner_swiper {
+.footer_bannerContainer {
     width: 100%;
     position: relative;
 }
 
-.footer_banner_swiper [class*='footer_bannerImg'] {
+.footer_bannerContainer [class*='footer_bannerSlide'] {
     display: inline-block;
     border: 1px solid #e4e4e4;
     width: 100%;
@@ -759,15 +797,15 @@ section {
     background-repeat: no-repeat;
 }
 
-.footer_bannerImg1 {
+.footer_bannerSlide1 {
     background-image: url(../img/f_banner1.jpg);
 }
 
-.footer_bannerImg2 {
+.footer_bannerSlide2 {
     background-image: url(../img/f_banner2.jpg);
 }
 
-.footer_banner_swiper [class*='swiper-button-'] {
+.footer_bannerContainer [class*='swiper-button-'] {
     position: absolute;
     top: 2px;
     width: 30px;
@@ -779,19 +817,19 @@ section {
     background-repeat: no-repeat;
 }
 
-.footer_banner_swiper [class*='swiper-button-'] {
+.footer_bannerContainer [class*='swiper-button-'] {
     margin-top: 0;
 }
 
-.footer_banner_swiper .swiper-button-prev {
+
+.footer_bannerContainer .swiper-button-prev {
     background-image: url(../img/prev_btn.jpg);
-    /* left: 13.7em; */
-    /* right: 2em; */
     left: auto;
-    right: 29px;
+    right: 30px;
+    border-right: 0;
 }
 
-.footer_banner_swiper .swiper-button-next {
+.footer_bannerContainer .swiper-button-next {
     background-image: url(../img/next_btn.jpg);
     right: 0;
 }
@@ -914,7 +952,7 @@ section {
     }
 
     /* 메인비주얼 슬라이드(1024) */
-    .main_visual_swiper {
+    .main_visualGroup {
         height: 38em;
     }
 
@@ -929,10 +967,8 @@ section {
     }
 
     .main_search .main_search_form input {
-        /* width: 20em; */
         width: 100%;
         height: 40px;
-        /* padding-right: 40px; */
     }
 
     .main_search .main_search_form button {
@@ -960,7 +996,7 @@ section {
     }
     
     /* 푸터 */
-    .footer_site, .footer_banner {
+    .footer_site, .footer_bannerGroup {
         display: none;
     }
 
@@ -1074,12 +1110,7 @@ section {
     }
 
     /* Korad 소식 (모바일 슬라이드) */
-    .koradNews_group .koradNews_box {
-        width: 49%;
-        margin-left: 1%;
-    }
-
-    .koradNews [class*='slide_button_'] {
+    .koradNewsGroup [class*='slide_button_'] {
         display: block;
         width: 40px;
         height: 40px;
@@ -1092,11 +1123,11 @@ section {
         transform: translate(0,-50%);
     }
     
-    .koradNews .slide_button_next {
+    .koradNewsGroup .slide_button_next {
         background-image: url(../img/slide_btn_next.png);
     }
     
-    .koradNews .slide_button_prev {
+    .koradNewsGroup .slide_button_prev {
         background-image: url(../img/slide_btn_prev.png);
     }
 

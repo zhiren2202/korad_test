@@ -42,41 +42,94 @@ var swiper = new Swiper('.main_visualGroup', {
 
 
 // 메인비주얼 메뉴아이콘 슬라이드
-var swiper = new Swiper('.main_visual_menuContainer', {
-    slidesPerView: 11.2,
-    spaceBetween: 0,
-    // init: false,
-    breakpoints: {
-        1250: {
-            slidesPerView: 8,
+
+
+// let ww = window.innerWidth;
+// let swiper;
+
+// responsiveSwiper();
+
+// function initSwiper(effect) {
+//   if (typeof(swiper) == 'object') swiper.destroy();
+  
+//   return swiper = new Swiper('.main_quickmenuContainer', {
+//     slidesPerView: 11.2,
+//     spaceBetween: 0,
+//     // init: false,
+//     breakpoints: {
+//         1250: {
+//             slidesPerView: 8,
+//             spaceBetween: 0,
+//         },
+//         1024: {
+//             slidesPerView: 7,
+//             spaceBetween: 0,
+//         },
+//         820: {
+//             slidesPerView: 5,
+//             spaceBetween: 0,
+//         },
+//         640: {
+//             slidesPerView: 3,
+//             spaceBetween: 0,
+//         },
+//         320: {
+//             slidesPerView: 1,
+//             spaceBetween: 0,
+//         }
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     a11y: {
+//         prevSlideMessage: '이전 슬라이드',
+//         nextSlideMessage: '다음 슬라이드',
+//         slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+//     },
+//     effect: effect
+//   })
+// }
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth < 1200) {
+        var swiper = new Swiper('.main_quickmenuContainer', {
+            slidesPerView: 11.2,
             spaceBetween: 0,
-        },
-        1024: {
-            slidesPerView: 7,
-            spaceBetween: 0,
-        },
-        820: {
-            slidesPerView: 5,
-            spaceBetween: 0,
-        },
-        640: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-        },
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        }
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    a11y: {
-        prevSlideMessage: '이전 슬라이드',
-        nextSlideMessage: '다음 슬라이드',
-        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
-    },
+            // init: false,
+            breakpoints: {
+                1250: {
+                    slidesPerView: 8,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 7,
+                    spaceBetween: 0,
+                },
+                820: {
+                    slidesPerView: 5,
+                    spaceBetween: 0,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            a11y: {
+                prevSlideMessage: '이전 슬라이드',
+                nextSlideMessage: '다음 슬라이드',
+                slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+            },
+        });
+    }
 });
 
 

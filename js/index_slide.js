@@ -2,18 +2,26 @@
 // Initialize Swiper
 
 // 메인비주얼 슬라이드
-var swiper = new Swiper('.main_visual_swiper', {
+var swiper = new Swiper('.main_visualGroup', {
     spaceBetween: 30,
+    keyboard: {
+        enabled: true,
+    },
     centeredSlides: true,
     effect : 'fade',
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
     on: {
         init: function () {
             thisSlide = this;
@@ -32,9 +40,10 @@ var swiper = new Swiper('.main_visual_swiper', {
     },
 });
 
+
 // 메인비주얼 메뉴아이콘 슬라이드
-var swiper = new Swiper('.main_visual_menuSlide', {
-    slidesPerView: 11,
+var swiper = new Swiper('.main_visual_menuContainer', {
+    slidesPerView: 11.2,
     spaceBetween: 0,
     // init: false,
     breakpoints: {
@@ -63,60 +72,48 @@ var swiper = new Swiper('.main_visual_menuSlide', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
 });
 
+
+
 // Korad 소식 (모바일 슬라이드)
-var swiper = new Swiper(".koradNews_slide", {
+var swiper = new Swiper(".koradNewsContainer", {
     slidesPerView: 4,
-    spaceBetween: 0,
+    spaceBetween: 10,
+    // slidesOffsetBefore:10,
     navigation: {
         nextEl: ".slide_button_next",
         prevEl: ".slide_button_prev",
     },
+    a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
     breakpoints: {
         820: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 4,
         }
     }
 });
 
-// $(window).resize(function() {
-//     // var width_size = window.outerWidth;
-//     if (window.innerWidth > 820) {
-//         div.classList.remove('koradNews_slide');
-//     } else {
-//         div.classList.add('koradNews_slide');
-//     }
-// }).resize();
-
-// function mediaq() {
-//     var windowWidth = $(window).width();
-//     if (windowWidth < 768) {
-//         div.classList.add('koradNews_slide');
-//     } else {
-//         div.classList.remove('koradNews_slide');
-//     }
-// }
-
-// //mediaq를 setResponsive에 담는다.
-// function setResponsive() {
-//     mediaq();
-// }
-// //브라우저가 로드될때 실행
-// $(window).on("load", function () {
-//     setResponsive();
-// });
-// //브라우저가 리사이즈될때 실행
-// $(window).on("resize", function () {
-//     etResponsive();
-// });
 
 
 // 푸터배너 슬라이드
-var swiper = new Swiper('.footer_banner_swiper', {
+var swiper = new Swiper('.footer_bannerContainer', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
 });

@@ -2,7 +2,9 @@
 // Initialize Swiper
 
 // 메인비주얼 슬라이드
-var swiper = new Swiper('.main_visualGroup', {
+
+    
+var swiper1_1 = new Swiper('.main_visualGroup', {
     spaceBetween: 30,
     keyboard: {
         enabled: true,
@@ -22,31 +24,21 @@ var swiper = new Swiper('.main_visualGroup', {
         nextSlideMessage: '다음 슬라이드',
         slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
-    on: {
-        init: function () {
-            thisSlide = this;
-            autoPlayBtn = document.querySelector('.wrap-autoplay-control > button');
-            autoPlayBtn.addEventListener('click', (e) => {
-                autoPlayState = autoPlayBtn.getAttribute('aria-pressed');
-                if (autoPlayState === 'false') {
-                    autoPlayBtn.setAttribute('aria-pressed', 'true');
-                    thisSlide.autoplay.stop();
-                } else if (autoPlayState === 'true') {
-                    autoPlayBtn.setAttribute('aria-pressed', 'false');
-                    thisSlide.autoplay.start();
-                };
-            });
-        },
-    },
 });
 
-// $(".main_visualGroup").mouseenter(function(){
-//     main_visualGrouplay();
-// });
+$('.main_visual_btns_start').click(function(){
+    swiper1_1.autoplay.start();
+    return false;
+});
+$('.main_visual_btns_stop').click(function(){
+    swiper1_1.autoplay.stop();
+    return false;
+});
 
-// $(".main_visualGroup").mouseleave(function(){
-//     swiper.startAutoPlay();
-// });
+// 포커스했을 때 (event?)
+// .swiper-pagination-bullet-active 추가 : .addClass("swiper-pagination-bullet-active")
+// swiper1_1.autoplay.stop();
+
 
 
 // 메인비주얼 메뉴아이콘 슬라이드
@@ -99,17 +91,14 @@ var swiper = new Swiper('.main_visualGroup', {
 //   })
 // }
 
+// 메인비주얼 메뉴아이콘 슬라이드
 window.addEventListener('resize', function() {
-    if (window.innerWidth < 1200) {
+    if (window.innerWidth < 1250) {
         var swiper = new Swiper('.main_quickmenuContainer', {
-            slidesPerView: 11.2,
+            slidesPerView: 8,
             spaceBetween: 0,
             // init: false,
             breakpoints: {
-                1250: {
-                    slidesPerView: 8,
-                    spaceBetween: 0,
-                },
                 1024: {
                     slidesPerView: 7,
                     spaceBetween: 0,
@@ -136,6 +125,11 @@ window.addEventListener('resize', function() {
                 nextSlideMessage: '다음 슬라이드',
                 slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
             },
+        });
+    } else {
+        var swiper = new Swiper('.main_quickmenuContainer', {
+            slidesPerView: 11,
+            spaceBetween: 0,
         });
     }
 });

@@ -131,7 +131,7 @@ a {
     display: flex;
     /* background-color: cadetblue; */
     align-items: center;
-    margin-right: 2em;
+    margin: 0 2em;
 }
 
 #header .nav_icon .nav_icon_items {
@@ -1205,9 +1205,9 @@ section {
 
 /* 모바일 (400px) */
 @media screen and (max-width:400px) {
-    body {
+    /* body {
         font-size: 0.8em;
-    }
+    } */
 
     #header .logo a img{
         width: 178px;
@@ -1225,8 +1225,9 @@ section {
     }
 
     [class*='main_visual_btns_'] {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.4em;
+        height: 1.4em;
+        margin: 0.4em;
     }
 
     /* 검색창 */
@@ -1269,11 +1270,6 @@ section {
     .mainBusiness_group [class*='mainBusiness_box_']::after {
         width: 70%;
         height: 50%;
-    }
-
-    /* SNS 배너 */
-    .sns_banner .sns_banner_icons br {
-        display: none;
     }
 }
 

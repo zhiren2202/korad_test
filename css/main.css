@@ -835,9 +835,9 @@ section {
     background-image: url(../img/f_banner2.jpg);
 }
 
-.footer_bannerContainer [class*='swiper-button-'] {
+.footer_bannerGroup [class*='swiper-button-'] {
     position: absolute;
-    top: 2px;
+    top: 10px;
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -847,21 +847,25 @@ section {
     background-repeat: no-repeat;
 }
 
-.footer_bannerContainer [class*='swiper-button-'] {
+.footer_bannerGroup [class*='swiper-button-'] {
     margin-top: 0;
 }
 
+.footer_bannerGroup [class*='swiper-button-']:focus-visible {
+    outline-offset: -1px;
+}
 
-.footer_bannerContainer .swiper-button-prev {
+
+.footer_bannerGroup .swiper-button-prev {
     background-image: url(../img/prev_btn.jpg);
     left: auto;
-    right: 30px;
+    right: 42px;
     border-right: 0;
 }
 
-.footer_bannerContainer .swiper-button-next {
+.footer_bannerGroup .swiper-button-next {
     background-image: url(../img/next_btn.jpg);
-    right: 0;
+    right: 12px;
 }
 
 .footer_company_info {

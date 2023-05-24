@@ -2,8 +2,6 @@
 // Initialize Swiper
 
 // 메인비주얼 슬라이드
-
-    
 var swiper1_1 = new Swiper('.main_visualGroup', {
     spaceBetween: 30,
     keyboard: {
@@ -35,15 +33,22 @@ $('.main_visual_btns_stop').click(function(){
     return false;
 });
 
-// 포커스했을 때 (event?)
-// .swiper-pagination-bullet-active 추가 : .addClass("swiper-pagination-bullet-active")
-// swiper1_1.autoplay.stop();
+var mainVisualBullet = $('.swiper-pagination .swiper-pagination-bullet');
+mainVisualBullet.focusin(function(){
+    swiper1_1.autoplay.stop();
+    $(this).addClass('swiper-pagination-bullet-active');
+    mainVisualBullet.not($(this)).removeClass('swiper-pagination-bullet-active');
+    return false;
+});
+mainVisualBullet.focusout(function(){
+    swiper1_1.autoplay.start();
+    $(this).removeClass("swiper-pagination-bullet-active");
+    return false;
+});
 
 
 
-// 메인비주얼 메뉴아이콘 슬라이드
-
-
+// 퀵메뉴 슬라이드
 // let ww = window.innerWidth;
 // let swiper;
 
@@ -91,7 +96,7 @@ $('.main_visual_btns_stop').click(function(){
 //   })
 // }
 
-// 메인비주얼 메뉴아이콘 슬라이드
+// 퀵메뉴 슬라이드
 window.addEventListener('resize', function() {
     if (window.innerWidth < 1250) {
         var swiper = new Swiper('.main_quickmenuContainer', {
@@ -138,8 +143,8 @@ window.addEventListener('resize', function() {
 
 // Korad 소식 (모바일 슬라이드)
 var swiper = new Swiper(".koradNewsContainer", {
-    slidesPerView: 4.2,
-    spaceBetween: 0,
+    slidesPerView: 4,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".slide_button_next",
         prevEl: ".slide_button_prev",
@@ -151,10 +156,25 @@ var swiper = new Swiper(".koradNewsContainer", {
     },
     breakpoints: {
         820: {
-            slidesPerView: 2.2,
+            slidesPerView: 2,
             spaceBetween: 10,
         }
     }
+});
+
+var koradNewsSlide = $('.koradNewsWrapper .swiper-slide');
+koradNewsSlide.focusin(function(){
+    $(this).addClass('swiper-slide-active');
+    $(this).removeClass('swiper-slide-next');
+    $(this).removeClass('swiper-slide-prev');
+    $(this).prev().addClass('swiper-slide-prev');
+    $(this).next().addClass('swiper-slide-next');
+    koradNewsSlide.not($(this)).removeClass('swiper-slide-active');
+    return false;
+});
+koradNewsSlide.focusout(function(){
+    $(this).removeClass("swiper-slide-active");
+    return false;
 });
 
 
@@ -171,7 +191,19 @@ var swiper = new Swiper('.footer_bannerContainer', {
         slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     }
 });
-// swiper.on('transitionEnd', function() {
-// 	console.log('now index :::', swiper.realIndex);
-// });
-swiper.slideTo(index,1000,runCallBacks);
+
+var footerSlide = $('.footer_bannerWrapper .swiper-slide');
+footerSlide.focusin(function(){
+    $(this).addClass('swiper-slide-active');
+    $(this).removeClass('swiper-slide-next');
+    $(this).removeClass('swiper-slide-prev');
+    $(this).prev().addClass('swiper-slide-prev');
+    $(this).next().addClass('swiper-slide-next');
+    footerSlide.not($(this)).removeClass('swiper-slide-active');
+    return false;
+});
+footerSlide.focusout(function(){
+    $(this).removeClass("swiper-slide-active");
+    return false;
+});
+

@@ -7,6 +7,7 @@
     <title>한국원자력환경공단</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/jquery-3.7.0.min.js" defer></script>
     <script src="js/swiper.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
@@ -53,11 +54,10 @@
                 <div class="main_visual_2 swiper-slide"><span class="blind">Slide 2</span></div>
                 <div class="main_visual_3 swiper-slide"><span class="blind">Slide 3</span></div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- //Add Pagination -->
-            <div class="wrap-autoplay-control">
-                <button type="button" aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+            <div class="main_visual_btns">
+                <button class="main_visual_btns_stop"><span class="blind">정지</span></button>
+                <button class="main_visual_btns_start"><span class="blind">시작</span></button>
             </div>
         </div>
         <!-- //메인비주얼 슬라이드 -->
@@ -82,14 +82,14 @@
                     <li><a href="#">통합검색</a></li>
                     <li class="main_search_menu_bar">|</li>
                     <li><a href="#">공지사항</a></li>
-                    <li class="main_search_menu_bar search_menu_hidden">|</li>
-                    <li class="main_search_menu_hidden"><a href="#">정보목록</a></li>
+                    <li class="main_search_menu_bar">|</li>
+                    <li><a href="#">정보목록</a></li>
                 </ul>
             </div>
         </article>
         <!--//검색창-->
         
-        <!-- 메인비주얼 메뉴아이콘 슬라이드 -->
+        <!-- 퀵메뉴 슬라이드 -->
         <section class="main_quickmenuGroup">
             <div class="main_quickmenuContainer swiper-container">
                 <div class="main_quickmenuWrapper swiper-wrapper">
@@ -138,12 +138,12 @@
                         홍보영상
                     </a>
                 </div>
-                <!-- Add Arrows -->
-                <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
-                <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
+            <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
         </section>
-        <!-- //메인비주얼 메뉴아이콘 슬라이드 -->
+        <!-- //퀵메뉴 슬라이드 -->
 
         <!--게시판-->
         <section class="board">
@@ -253,10 +253,10 @@
                         청정누리 웹진
                     </a>
                 </div>
-                <!-- Add Arrows -->
-                <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
-                <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="slide_button_prev swiper-button-prev"><span class="blind">이전 슬라이드</span></div>
+            <div class="slide_button_next swiper-button-next"><span class="blind">다음 슬라이드</span></div>
         </section>
         <!-- //Korad 소식 -->
 
@@ -271,6 +271,7 @@
                 <a href="#" class="sns_icon instagram">
                     <span class="blind">인스타그램</span>
                 </a>
+                <br>
                 <a href="#" class="sns_icon naver">
                     <span class="blind">네이버 블로그</span>
                 </a>

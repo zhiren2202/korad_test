@@ -100,31 +100,44 @@ a {
 #header .logo a {
     overflow: hidden;
     display: block;
-    height: 1.8em;
-    margin: 0.1em 0;
+    height: 2em;
+}
+
+#header .logo a:focus-visible {
+    outline-offset: -1px;
 }
 
 #header .logo a img {
     width: 240px;
     height: auto;
     overflow: hidden;
+    margin: 2px 0;
 }
 
 #header .top_navbar {
-    width: 70em;
+    /* width: 70em; */
+    width: 100%;
     margin: 0 auto;
     /* background-color: cadetblue; */
     text-align: center;
     line-height: 4em;
     overflow: hidden;
-    padding-left: 0.1em;
 }
 
 #header .top_navbar .top_nav_menu {
-    padding: 0 1.2em;
+    /* padding: 0 1.2em; */
     font-size: 1.2em;
     color: #323232;
     font-weight: 600;
+    display: block;
+    width: 11.5%;
+    float: left;
+    margin-left: 1%;
+    max-height: 3em;
+}
+
+#header .top_navbar .top_nav_menu:focus-visible {
+    outline-offset: -2px;
 }
 
 #header .nav_icon {
@@ -201,7 +214,7 @@ section {
 }
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 9em;
-    padding-right: 5.5em;
+    padding-right: 4em;
 }
 .main_visualGroup .swiper-pagination {
     text-align: right;
@@ -223,11 +236,14 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: block;
+    display: none;
     float: left;
 }
 [class*='main_visual_btns_']:hover {
     cursor: pointer;
+}
+[class*='main_visual_btns_'].active {
+    display: block;
 }
 .main_visual_btns_start {
     background-image: url(../img/play.png);
@@ -284,7 +300,7 @@ section {
     padding: 0 0.5em;
 }
 .main_quickmenu:focus-visible {
-    outline-offset: -1px;
+    outline-offset: -6px;
 }
 
 /*** 검색창 ***/
@@ -491,6 +507,11 @@ section {
     padding-left: 0.4em;
     font-weight: 400;
 }
+
+.board .boardBox .board_contents li a:focus-visible {
+    width: 100%;
+}
+
 
 /*** 바로가기 메뉴 ***/
 .iconMenuBox [class*='iconMenu_'] {
@@ -918,6 +939,14 @@ section {
 
 /* max-width : 1250px */
 @media screen and (max-width:1250px){
+
+    #header .top_navbar .top_nav_menu {
+        font-size: 1em;
+        max-height: 4em;
+        width: 10.5%;
+        margin-left: 2%;
+    }
+
     /* 퀵메뉴 슬라이드 */
     .main_quickmenuGroup [class*='slide_button_'] {
         display: block;
@@ -936,6 +965,11 @@ section {
 
     .main_quickmenuGroup .slide_button_prev {
         background-image: url(../img/slide_btn_prev.png);
+    }
+
+    .main_quickmenuGroup .swiper-wrapper {
+        padding: 2em 0.1em;
+        justify-content:normal;
     }
 
     /* 주요사업 */
@@ -973,7 +1007,7 @@ section {
 
     #header .logo a img{
         width: 200px;
-        margin: 0.584px 0;
+        margin: 3.8px 0;
     }
 
     .top_navbar {
@@ -1065,6 +1099,10 @@ section {
 
 /* max-width : 820px */
 @media screen and (max-width:820px) {
+
+    #container {
+        margin-bottom: 6em;
+    }
 
     /* 메인비주얼 슬라이드 */
     .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -1209,22 +1247,31 @@ section {
 
 /* 모바일 (400px) */
 @media screen and (max-width:400px) {
-    /* body {
-        font-size: 0.8em;
-    } */
+    #header .logo {
+        margin-left: 0.5rem;
+    }
 
     #header .logo a img{
         width: 178px;
-        margin: 0.1485px 0;
+        margin: 6.55px 0;
+    }
+
+    #header .nav_icon {
+        margin: 0 1em;
+    }
+
+    section {
+        padding: 0 1em;
     }
 
     /* 메인비주얼 슬라이드 */
     .swiper-container-horizontal > .swiper-pagination-bullets {
-        padding-right: 6em;
+        bottom: 7em;
+        padding-right: 4em;
     }
     
     .main_visual_btns {
-        bottom: 6.1em;
+        bottom: 7.1em;
         right: 2em;
     }
 
@@ -1265,6 +1312,9 @@ section {
     }
 
     /* 주요사업 */
+    .mainBusiness_title {
+        font-size: 2em;
+    }
     .mainBusiness_group [class*='mainBusiness_box_'] {
         height: 6em;
     }
@@ -1274,6 +1324,11 @@ section {
     .mainBusiness_group [class*='mainBusiness_box_']::after {
         width: 70%;
         height: 50%;
+    }
+
+    /* Korad 소식 (모바일 슬라이드) */
+    .koradNews_title {
+        font-size: 2em;
     }
 }
 

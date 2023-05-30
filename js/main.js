@@ -82,8 +82,8 @@ var swiper2 = new Swiper(".main_quickmenuContainer", {
         },
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".main_quickmenuGroup .swiper-button-next",
+        prevEl: ".main_quickmenuGroup .swiper-button-prev",
     },
     keyboard: {
         enabled: true,

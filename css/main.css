@@ -1,60 +1,60 @@
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.eot') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.otf') format(‘opentype’);
     font-weight: 100;
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Thin.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Thin.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Thin.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Thin.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Thin.otf') format(‘opentype’);
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.eot?#iefix') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.otf') format(‘opentype’);
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Light.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Light.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Light.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Light.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Light.otf') format(‘opentype’);
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.eot?#iefix') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.otf') format(‘opentype’);
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Regular.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Regular.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Regular.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Regular.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Regular.otf') format(‘opentype’);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.eot?#iefix') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.otf') format(‘opentype’);
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Medium.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Medium.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Medium.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Medium.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Medium.otf') format(‘opentype’);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.eot?#iefix') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.otf') format(‘opentype’);
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Bold.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Bold.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Bold.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Bold.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Bold.otf') format(‘opentype’);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.eot?#iefix') format(‘embedded-opentype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.woff2') format(‘woff2’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.woff') format(‘woff’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.ttf') format(‘truetype’);
-    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.otf') format(‘opentype’);
+    src:url('../font/Noto_Sans_KR/NotoSansKR-Black.eot?#iefix') format(‘embedded-opentype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Black.woff2') format(‘woff2’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Black.woff') format(‘woff’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Black.ttf') format(‘truetype’),
+        url('../font/Noto_Sans_KR/NotoSansKR-Black.otf') format(‘opentype’);
     font-weight: 900;
 }
 
@@ -212,6 +212,9 @@ section {
 .main_visualGroup .swiper-pagination-bullet-active {
     background: #fff;
 }
+.main_visualGroup .swiper-pagination-bullet:focus-visible {
+    background:#38a200;
+}
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 9em;
     padding-right: 4em;
@@ -268,6 +271,10 @@ section {
     display: none;
 }
 
+.main_quickmenuGroup [class*='slide_button_']:focus-visible {
+    outline: 2px solid #000 ;
+}
+
 .main_quickmenuContainer {
     border: 1px solid #e4e4e4;
     border-radius: 5px;
@@ -281,7 +288,12 @@ section {
 .main_quickmenuGroup .swiper-wrapper .swiper-slide {
     width: auto;
     height: auto;
+    padding: 0.5em 0;
     /* background-color: #677a8f; */
+}
+.main_quickmenuGroup .swiper-wrapper .swiper-slide:hover,
+.main_quickmenuGroup .swiper-wrapper .swiper-slide:focus {
+    color: #38a200;
 }
 .main_quickmenu {
     overflow: hidden;
@@ -337,7 +349,7 @@ section {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0.5em;
 }
@@ -347,14 +359,14 @@ section {
 }
 
 .main_search_form .main_search_select {
-    width: 6em;
+    width: 5em;
     height: 100%;
     border: 0;
     background: none;
     color: #fff;
     font-size: 1.5em;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     /* background-color:darkgoldenrod; */
     -webkit-appearance:none; /* for chrome */
     -moz-appearance:none; /*for firefox*/
@@ -362,6 +374,14 @@ section {
     background-image: url(../img/select_arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
+}
+
+.main_search_form .main_search_select:hover {
+    cursor: pointer;
+}
+
+.main_search_select option {
+    background-color:rgba(0, 0, 0, 0.7);
 }
 
 .main_search_form input {
@@ -456,6 +476,11 @@ section {
     border-left: 0;
 }
 
+.main_search_menu a:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: -1px;
+}
+
 /*** 게시판 ***/
 .board .boardBox {
     padding: 3em 2em;
@@ -489,17 +514,16 @@ section {
     right: 2.5em;
 }
 
+.board .boardBox .board_more img {
+    display: block;
+    width: 100%;
+}
+
 .board .boardBox .board_contents li {
     padding: 4px 0;
     font-size: 1.2em;
     overflow: hidden;
 }
-
-/* .board .boardBox .board_contents li::before {
-    content: '•';
-    color: #38a200;
-    margin-right: 4px;
-} */
 
 .board .boardBox .board_contents li span {
     color: #38a200;
@@ -647,6 +671,10 @@ section {
     height: 100%;
     position: relative;
 }
+
+.koradNewsGroup [class*='slide_button_']:focus-visible {
+    outline: 2px solid #000 ;
+}
     
 .koradNews_title {
     text-align: center;
@@ -670,6 +698,12 @@ section {
     font-size: 1.6em;
     font-weight: 500;
     border-radius: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+.koradNewsWrapper .koradNews:hover,
+.koradNewsWrapper .koradNews:focus {
+    color:#38a200;
 }
 
 .koradNewsWrapper .koradNews:focus-visible {
@@ -713,14 +747,9 @@ section {
 
 .sns_banner .sns_banner_icons {
     /* background-color: burlywood; */
-    /* width: 15em; */
     position: absolute;
     top: 2em;
     right: 10em;
-}
-
-.sns_banner .sns_banner_icons br {
-    display: none;
 }
 
 .sns_banner .sns_icon {
@@ -732,11 +761,9 @@ section {
     border-radius: 100px;
     background-size: cover;
     background-position: center;
-    /* overflow: hidden;
-    color: transparent; */
 }
 
-.blind { /*찾아보기*/
+.blind {
     overflow: hidden;
     display: inline-block;
     position: absolute;
@@ -1219,7 +1246,6 @@ section {
     .sns_banner {
         background: none;
         height: 8em;
-        /* padding: 2em; */
         /* background-color: antiquewhite; */
     }
     .sns_banner img {
@@ -1253,12 +1279,21 @@ section {
         width: 30px;
         height: 30px;
     }
+    
+}
+
+/* max-width : 420px */
+@media screen and (max-width:420px) {
 
     /* SNS 배너 */
-    .sns_banner .sns_banner_icons br {
-        display: block;
+    .sns_banner .sns_banner_icons {
+        width: 14em;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
-    
+
 }
 
 /* 모바일 (400px) */
@@ -1355,10 +1390,5 @@ section {
     .iconMenuBox [class*='iconMenu_'] {
         width: 100%;
         margin-left: 0;
-    }
-
-    /* SNS 배너 */
-    .sns_banner .sns_banner_icons br {
-        display: block;
     }
 }

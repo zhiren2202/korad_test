@@ -2,9 +2,10 @@
 // 메인비주얼 슬라이드
 var swiper1 = new Swiper('.main_visualGroup', {
     spaceBetween: 30,
-    // keyboard: {
-    //     enabled: true,
-    // },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
     centeredSlides: true,
     effect : 'fade',
     autoplay: {
@@ -96,44 +97,6 @@ var swiper2 = new Swiper(".main_quickmenuContainer", {
         "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
     },
     });
-    swiper2.on("keyPress", (swiper, keyCode) => {
-        switch (keyCode) {
-          case 38:
-            swiper.slidePrev();
-            break;
-          case 40:
-            swiper.slideNext();
-            break;
-        }
-      });
-
-
-var quickmenuSlide = $('.main_quickmenuWrapper .swiper-slide');
-quickmenuSlide.focusin(function(){
-    $(this).addClass('swiper-slide-active');
-    $(this).removeClass('swiper-slide-prev');
-    $(this).removeClass('swiper-slide-next');
-    quickmenuSlide.not($(this)).removeClass('swiper-slide-active');
-    quickmenuSlide.not($(this).prev()).removeClass('swiper-slide-prev');
-    quickmenuSlide.not($(this).next()).removeClass('swiper-slide-next');
-    $(this).prev().addClass('swiper-slide-prev');
-    $(this).next().addClass('swiper-slide-next');
-    return false;
-});
-quickmenuSlide.focusout(function(){
-    $(this).removeClass("swiper-slide-active");
-    return false;
-});
-
-// var scale = (current + 1) / total;
-// swiper2.on('slideChange',function(){
-//         var scaleX = 1;
-//         var scaleY = 1;
-
-//     $(this).transform(("translate3d(0,0,0) scaleX(" + scaleX + ") scaleY(" + scaleY + ")")).transition(swiper.params.speed);
-// });
-
-
 
 // Korad 소식 (모바일 슬라이드)
 var swiper3 = new Swiper(".koradNewsContainer", {
@@ -141,7 +104,7 @@ var swiper3 = new Swiper(".koradNewsContainer", {
     spaceBetween: 10,
     keyboard: {
         enabled: true,
-        // onlyInViewport: true,
+        onlyInViewport: true,
     },
     navigation: {
         nextEl: ".koradNewsGroup .slide_button_next",
@@ -163,51 +126,31 @@ var swiper3 = new Swiper(".koradNewsContainer", {
     touchReleaseOnEdges: true,
 });
 
-var koradNewsSlide = $('.koradNewsWrapper .swiper-slide');
-
-koradNewsSlide.focusin(function () {
-  $(this).addClass("swiper-slide-active");
-  $(this).removeClass("swiper-slide-prev");
-  $(this).removeClass("swiper-slide-next");
-  koradNewsSlide.not($(this)).removeClass("swiper-slide-active");
-  koradNewsSlide.not($(this).prev()).removeClass("swiper-slide-prev");
-  koradNewsSlide.not($(this).next()).removeClass("swiper-slide-next");
-  $(this).prev().addClass("swiper-slide-prev");
-  $(this).next().addClass("swiper-slide-next");
-  $(this).transform("translate3d(" + tx + "px, " + ty + "px, 0px)");
-  return false;
-});
-koradNewsSlide.focusout(function () {
-  $(this).removeClass("swiper-slide-active");
-  return false;
-});
-
 
 // 푸터배너 슬라이드
-var swiper4 = new Swiper('.footer_bannerContainer', {
+var swiper4 = new Swiper(".footer_bannerContainer1", {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".nextBtn1",
+        prevEl: ".prevBtn1",
     },
     a11y: {
-        prevSlideMessage: '이전 슬라이드',
-        nextSlideMessage: '다음 슬라이드',
-        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+        prevSlideMessage: "이전 슬라이드",
+        nextSlideMessage: "다음 슬라이드",
+        slideLabelMessage:
+        "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
+    }
+});
+var swiper4 = new Swiper(".footer_bannerContainer2", {
+    navigation: {
+        nextEl: ".nextBtn2",
+        prevEl: ".prevBtn2",
+    },
+    a11y: {
+        prevSlideMessage: "이전 슬라이드",
+        nextSlideMessage: "다음 슬라이드",
+        slideLabelMessage:
+        "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
     }
 });
 
-var footerSlide = $('.footer_bannerWrapper .swiper-slide');
-footerSlide.focusin(function(){
-    $(this).addClass('swiper-slide-active');
-    $(this).removeClass('swiper-slide-next');
-    $(this).removeClass('swiper-slide-prev');
-    $(this).prev().addClass('swiper-slide-prev');
-    $(this).next().addClass('swiper-slide-next');
-    footerSlide.not($(this)).removeClass('swiper-slide-active');
-    return false;
-});
-footerSlide.focusout(function(){
-    $(this).removeClass("swiper-slide-active");
-    return false;
-});
 

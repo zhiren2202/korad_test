@@ -37,7 +37,7 @@ $('.main_visual_btns_stop').click(function(){
 });
 
 
-var mainVisualBullet = $('.swiper-pagination .swiper-pagination-bullet');
+var mainVisualBullet = $('.main_visualGroup .swiper-pagination-bullet');
 
 mainVisualBullet.focusin(function(){
     swiper1.autoplay.stop();
@@ -133,18 +133,7 @@ var swiper4 = new Swiper(".footer_bannerContainer1", {
         nextEl: ".nextBtn1",
         prevEl: ".prevBtn1",
     },
-    a11y: {
-        prevSlideMessage: "이전 슬라이드",
-        nextSlideMessage: "다음 슬라이드",
-        slideLabelMessage:
-        "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
-    }
-});
-var swiper4 = new Swiper(".footer_bannerContainer2", {
-    navigation: {
-        nextEl: ".nextBtn2",
-        prevEl: ".prevBtn2",
-    },
+    loop: true,
     a11y: {
         prevSlideMessage: "이전 슬라이드",
         nextSlideMessage: "다음 슬라이드",
@@ -153,4 +142,17 @@ var swiper4 = new Swiper(".footer_bannerContainer2", {
     }
 });
 
+var swiper5 = new Swiper(".footer_bannerContainer2", {
+    navigation: {
+        nextEl: ".nextBtn2",
+        prevEl: ".prevBtn2",
+    },
+    loop: true,
+    a11y: {
+        prevSlideMessage: "이전 슬라이드",
+        nextSlideMessage: "다음 슬라이드",
+        slideLabelMessage:
+        "총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.",
+    }
+});
 

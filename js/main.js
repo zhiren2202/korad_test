@@ -2,22 +2,31 @@
 // GNB 드롭다운 메뉴
 $(function () {
 
-	$(".top_nav_menu a").on("mouseenter focus", function () {
+	$(".top_nav_menu > a").on("mouseenter focus", function () {
+        $(".top_nav_bg").stop().hide();
         $(this).siblings(".top_nav_bg").stop().show();
-        $(this).parents(".top_nav_menu").find(".top_nav_dept1").stop().show();
+        $(this).parent().addClass("active");
     });
-	$(".top_nav_menu").on("mouseleave", function () {
-        $(this).find(".top_nav_bg").stop().hide();
-    }); 
-	$(".top_nav_menu a").on("mouseenter focus", function () {
-		$(".top_nav_menu").not($(this).parents(".top_nav_menu")).removeClass("active");
-		$(this).parent().addClass("active");
-	});
-	$(".top_nav_menu").on("mouseleave", function () {
-		$(this).removeClass("active");
-	});
 
-})
+	$(".top_nav_menu").on("mouseleave focusout", function () {
+		$(this).removeClass("active");
+		$(".top_nav_bg").not($(this).find(".top_nav_bg")).hide();
+    });
+
+    $(".top_nav_menu").on("mouseleave", function(){
+        $(this).find(".top_nav_bg").hide(); 
+    });
+
+    $(".top_nav_dept1 > li > a, .top_nav_dept2 > li > a").on("focus", function(){
+        $(this).parents(".top_nav_menu").addClass("active");
+    });
+
+    $(".logo > a, .nav_icon_items > a").on("focus",function(){
+        $(".top_nav_bg").hide();
+    });
+    
+});
+
 
 
 // 메인비주얼 슬라이드

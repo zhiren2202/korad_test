@@ -289,13 +289,13 @@ section {
     background-position: center;
 }
 .main_visualGroup .main_visualWrapper .main_visual_1 {
-    background-image: url(/resources/img/main_visual_1.jpg);
+    background-image: url(../img/main_visual_1.jpg);
 }
 .main_visualGroup .main_visualWrapper .main_visual_2 {
-    background-image: url(/resources/img/main_visual_2.jpg);
+    background-image: url(../img/main_visual_2.jpg);
 }
 .main_visualGroup .main_visualWrapper .main_visual_3 {
-    background-image: url(/resources/img/main_visual_3.jpg);
+    background-image: url(../img/main_visual_3.jpg);
 }
 
 .main_visualGroup .swiper-pagination-bullet {
@@ -345,10 +345,10 @@ section {
     display: block;
 }
 .main_visual_btns_start {
-    background-image: url(/resources/img/play.png);
+    background-image: url(../img/play.png);
 }
 .main_visual_btns_stop {
-    background-image: url(/resources/img/pause.png);
+    background-image: url(../img/pause.png);
 }
 
 
@@ -467,7 +467,7 @@ section {
     -webkit-appearance:none; /* for chrome */
     -moz-appearance:none; /*for firefox*/
     appearance:none;
-    background-image: url(/resources/img/select_arrow.png);
+    background-image: url(../img/select_arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -722,15 +722,15 @@ section {
     margin-left: 0;
 }
 .mainBusiness_group .mainBusiness_box_1::before {
-    background-image: url(/resources/img/bgimg1.jpg);
+    background-image: url(../img/bgimg1.jpg);
     background-position: left -24px;
 }
 .mainBusiness_group .mainBusiness_box_2::before {
-    background-image: url(/resources/img/bgimg2.jpg);
+    background-image: url(../img/bgimg2.jpg);
     background-position: -286px -168px;
 }
 .mainBusiness_group .mainBusiness_box_3::before {
-    background-image: url(/resources/img/bgimg3.jpg);
+    background-image: url(../img/bgimg3.jpg);
     background-position: center;
 }
 
@@ -873,19 +873,19 @@ section {
 }
 
 .youtube {
-    background-image: url(/resources/img/sns_icon_y.png);
+    background-image: url(../img/sns_icon_y.png);
 }
 
 .instagram {
-    background-image: url(/resources/img/sns_icon_i.png);
+    background-image: url(../img/sns_icon_i.png);
 }
 
 .naver {
-    background-image: url(/resources/img/sns_icon_n.png);
+    background-image: url(../img/sns_icon_n.png);
 }
 
 .facebook {
-    background-image: url(/resources/img/sns_icon_f.png);
+    background-image: url(../img/sns_icon_f.png);
 }
 
 /*** footer ***/
@@ -988,11 +988,11 @@ section {
 }
 
 .footer_bannerSlide1 {
-    background-image: url(/resources/img/f_banner1.jpg);
+    background-image: url(../img/f_banner1.jpg);
 }
 
 .footer_bannerSlide2 {
-    background-image: url(/resources/img/f_banner2.jpg);
+    background-image: url(../img/f_banner2.jpg);
 }
 
 .footer_bannerGroup [class*='swiper-button-'] {
@@ -1017,14 +1017,14 @@ section {
 
 
 .footer_bannerGroup .swiper-button-prev {
-    background-image: url(/resources/img/prev_btn.jpg);
+    background-image: url(../img/prev_btn.jpg);
     left: auto;
     right: 42px;
     border-right: 0;
 }
 
 .footer_bannerGroup .swiper-button-next {
-    background-image: url(/resources/img/next_btn.jpg);
+    background-image: url(../img/next_btn.jpg);
     right: 12px;
 }
 
@@ -1097,11 +1097,11 @@ section {
     }
 
     .main_quickmenuGroup .slide_button_next {
-        background-image: url(/resources/img/slide_btn_next.png);
+        background-image: url(../img/slide_btn_next.png);
     }
 
     .main_quickmenuGroup .slide_button_prev {
-        background-image: url(/resources/img/slide_btn_prev.png);
+        background-image: url(../img/slide_btn_prev.png);
     }
 
     .main_quickmenuGroup .swiper-wrapper {
@@ -1329,11 +1329,11 @@ section {
     }
     
     .koradNewsGroup .slide_button_next {
-        background-image: url(/resources/img/slide_btn_next.png);
+        background-image: url(../img/slide_btn_next.png);
     }
     
     .koradNewsGroup .slide_button_prev {
-        background-image: url(/resources/img/slide_btn_prev.png);
+        background-image: url(../img/slide_btn_prev.png);
     }
 
     /* SNS 배너 */
